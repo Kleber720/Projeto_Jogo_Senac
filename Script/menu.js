@@ -1,12 +1,14 @@
+let iniciou = false;
 
+function iniciarMenu() {
+    if (iniciou) return;
 
-function substituirTexto() {
-    const elemento = document.getElementById("meuTexto");
+    iniciou = true;
 
-    // Verifica se o elemento existe antes de alterar
-    if (elemento) {
-        elemento.innerText = "Texto substituído com sucesso!";
-    } else {
-        console.error("Elemento não encontrado!");
-    }
+    document.getElementById("meuTexto").innerText = "";
+
+    document.getElementById("menu").classList.add("menu-iniciado");
 }
+
+document.addEventListener("keydown", iniciarMenu);
+document.addEventListener("click", iniciarMenu);

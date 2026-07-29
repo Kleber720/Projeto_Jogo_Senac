@@ -75,6 +75,59 @@ p:hover {
     color: var(--text);
 }
 
-body:active {
-    
+#titulo{
+    transition: transform .8s ease;
 }
+
+#meuTexto{
+    transition: opacity .5s ease;
+}
+
+#botoes{
+    margin-top:40px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    opacity:0;
+    transform:translateY(30px);
+    pointer-events:none;
+
+    transition:.8s ease;
+}
+
+#botoes button{
+    padding:15px 40px;
+    font-family: var(--font-pixel);
+    cursor:pointer;
+}
+
+/* Estado após pressionar uma tecla */
+
+#menu{
+    position:relative;
+}
+
+#titulo{
+    position:relative;
+    transition:all .8s ease;
+}
+
+.menu-iniciado #titulo{
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.menu-iniciado #meuTexto{
+    opacity:0;
+}
+
+.menu-iniciado #botoes{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+}
+
