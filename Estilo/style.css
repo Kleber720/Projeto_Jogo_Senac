@@ -1,0 +1,80 @@
+:root {
+    --bg: #071522;
+    --senac-blue: #004A8D;
+    --senac-blue-deep: #00284a;
+    --panel: rgba(0,32,58,0.88);
+    --panel-solid: #0b2036;
+    --panel-2: rgba(0,42,74,0.9);
+    --senac-orange: #F7941D;
+    --senac-orange-light: #FDC180;
+    --pixel-shadow: #00101c;
+    --text: #eef3f8;
+    --text-dim: #9fb8d1;
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-body: 'Pixelify Sans', monospace;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    opacity: 0.9;
+}
+
+h1{
+    font-size: 4em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: var(--font-pixel);
+    color: var(--text);
+    text-shadow: 3px 5px 0px black;
+}
+
+.accent {
+    color: var(--senac-orange);
+}
+
+p{
+    /*text-shadow: 3px 5px 0px black;
+    color: var(--text);*/
+    font-family: var(--font-body);
+    font-size: 2em;
+    cursor: pointer;
+    transition: color 0.2s linear;
+    transition: text-shadow 0.3s linear;
+}
+
+p:hover {
+    text-shadow: 3px 5px 0px black;
+    color: var(--text);
+}
+
+body:active {
+    
+}
