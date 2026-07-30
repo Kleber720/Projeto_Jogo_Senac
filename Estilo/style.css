@@ -61,13 +61,12 @@ h1{
 }
 
 p{
-    /*text-shadow: 3px 5px 0px black;
-    color: var(--text);*/
+    text-shadow: 3px 5px 0px black;
+    color: var(--text);
     font-family: var(--font-body);
     font-size: 2em;
     cursor: pointer;
-    transition: color 0.2s linear;
-    transition: text-shadow 0.3s linear;
+    transition:color .2s linear, text-shadow .3s linear;
 }
 
 p:hover {
@@ -75,6 +74,64 @@ p:hover {
     color: var(--text);
 }
 
-body:active {
-    
+#titulo{
+    position:relative;
+    transition:all .8s ease;
+}
+
+#meuTexto{
+    transition:
+        opacity 0.5s ease,
+        transform .2s ease,
+        color 0.2s ease,
+        text-shadow .2s ease;
+}
+
+#meuTexto:hover{
+    transform: scale(1.05);
+    color: var(--text);
+    text-shadow: 0px 0px 0px var(--pixel-shadow);
+}
+
+#botoes{
+    margin-top:40px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    opacity:0;
+    transform:translateY(30px);
+    pointer-events:none;
+
+    transition:.8s ease;
+}
+
+#botoes button{
+    padding:15px 40px;
+    font-family: var(--font-pixel);
+    cursor:pointer;
+}
+
+/* Estado após pressionar uma tecla */
+
+#menu{
+    position:relative;
+}
+
+.menu-iniciado #titulo{
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.menu-iniciado #meuTexto{
+    opacity:0;
+}
+
+.menu-iniciado #botoes{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
 }
