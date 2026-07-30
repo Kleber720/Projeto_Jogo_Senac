@@ -52,7 +52,7 @@ img {
   top: 0;
   right: 33.5%;
   /* Caminho para a sua imagem */
-  background-image: url("../Imagem/pixilart-sprite.png");
+  
   background-repeat: no-repeat;
   background-size: 512px;
 
@@ -70,7 +70,7 @@ img {
   top: 0;
   right: 26.5%;
   /* Caminho para a sua imagem */
-  background-image: url("../Imagem/pixilart-sprite-invertido.png");
+  background-image: url("../Imagem/carro-vermei-invertido.png");
   background-repeat: no-repeat;
   background-size: 512px;
 
