@@ -35,7 +35,32 @@ img {
     opacity: 0.9;
 }
 
-#tela{
-    width: 100%;
-    height: 100%;
+h1 {
+    font-size: 4em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: var(--font-pixel);
+    color: var(--text);
+    text-shadow: 3px 5px 0px black;
+}
+
+.accent {
+    color: var(--senac-orange);
+}
+
+#titulo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: left 1s ease, opacity 1s ease;
+}
+
+#titulo.titulo-sai {
+    left: -50%;
+    opacity: 0;
 }
