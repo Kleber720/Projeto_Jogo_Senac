@@ -41,7 +41,7 @@ img {
     height: 100%;
     object-fit: cover; 
     z-index: -1;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 h1{
@@ -134,4 +134,13 @@ p:hover {
     opacity:1;
     transform:translateY(0);
     pointer-events:auto;
+}
+
+#jogador{
+    height: 35px;
+    border: none;
+    text-align: center;
+    margin: 30px 8px;
+    border-radius: 8px;
+    background-color: rgb(255, 240, 221);
 }
