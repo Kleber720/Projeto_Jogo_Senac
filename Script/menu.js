@@ -8,3 +8,9 @@ function iniciarMenu() {
 
 document.addEventListener("keydown", iniciarMenu);
 document.addEventListener("click", iniciarMenu);
+
+const btn_jogar=document.querySelector("#btn_jogar");
+
+btn_jogar.addEventListener("click", ()=>{
+    window.location.href="../Marcacao/jogo.html"
+});

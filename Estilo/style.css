@@ -81,16 +81,16 @@ p:hover {
 
 #meuTexto{
     transition:
-        opacity .5s ease,
+        opacity 0.5s ease,
         transform .2s ease,
-        color .2s ease,
+        color 0.2s ease,
         text-shadow .2s ease;
 }
 
 #meuTexto:hover{
     transform: scale(1.05);
     color: var(--text);
-    text-shadow: 0.5px 0 0 var(--pixel-shadow);
+    text-shadow: 0px 0px 0px var(--pixel-shadow);
 }
 
 #botoes{
