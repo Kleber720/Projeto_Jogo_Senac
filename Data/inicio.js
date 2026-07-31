@@ -148,13 +148,19 @@ const Inicio = {
   paredes: [
     {
       id: "parede_1",
+<<<<<<< Updated upstream
       x: 1165,
       y: 512,
+=======
+      x: 0,
+      y: 384,
+>>>>>>> Stashed changes
       width: 64,
       height: 64,
     },
     {
       id: "parede_2",
+<<<<<<< Updated upstream
       x: 1165,
       y: 576,
       width: 64,
@@ -321,6 +327,14 @@ const Inicio = {
     //   width: 64,
     //   height: 64,
     // },
+=======
+      x: 64,
+      y: 384,
+      width: 64,
+      height: 64,
+    },
+    // adicione quantas quiser, seguindo o mesmo padrão
+>>>>>>> Stashed changes
   ],
   caixa1: {
     id: "c1_1",
@@ -332,7 +346,10 @@ const Inicio = {
     efeito: {
       status: true,
     },
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
   },
   elemento1: {
     id: "e1_1",
