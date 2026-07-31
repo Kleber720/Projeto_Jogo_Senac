@@ -5,3 +5,9 @@ if (titulo) {
         titulo.classList.add("titulo-sai");
     }, 1500);
 }
+
+const seta = document.getElementById("seta");
+
+titulo.addEventListener("transitionend", () => {
+    seta.style.opacity = "1";
+});
