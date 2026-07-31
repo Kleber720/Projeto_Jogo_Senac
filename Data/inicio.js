@@ -155,15 +155,24 @@ const Inicio = {
     },
     elemento1: {
       id: "e1_1",
-      x: 64,
-      y: 0,
+      x: 1152,
+      y: 576,
       width: 64,
       height: 64,
       img: "",
-      status: true,
+      status: false,
       texto: "",
-    },
-  };
+    }
+    paredes: [
+      {
+        id: "parede1",
+        x: 1152,
+        y: 576,
+        width: 64,
+        height: 64,
+      }
+    ]
+};
   
   export default Inicio;
   
