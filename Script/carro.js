@@ -1,10 +1,14 @@
-const carro1 = document.querySelector("#carro")
-const carro2 = document.querySelector("#carro2")
+const carro1 = document.querySelector("#carro");
 
-const listaURL = ["../Imagem/carro/carro-vermei.png","../Imagem/carro/carro-rosa.png"]
+const carro2 = document.querySelector("#carro2");
 
-const random = Math.floor(Math.random()* listaURL.length)
+const listaURL = [
+  "../Imagem/cenario/assets/carro/carro-vermei.png",
+  "../Imagem/cenario/assets/carro/carro-rosa.png",
+];
 
-const itemRandom = listaURL[random]
+const random = Math.floor(Math.random() * listaURL.length);
+
+const itemRandom = listaURL[random];
 
 carro1.style.backgroundImage = `url(${itemRandom})`;

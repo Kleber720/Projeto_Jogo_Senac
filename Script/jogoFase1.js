@@ -1,9 +1,6 @@
-// Importando elementos
-import Personagem from "../entity/personagens.js";
-
-import Plataforma from "../entity/plataforma.js";
-import fase1 from "../data/fase1.js";
-import Obstaculo from "../entity/obstaculo.js";
+import Personagem from "../Entitys/personagens.js";
+import Plataforma from "../Entitys/plataforma.js";
+import Fase1 from "../Data/fase1.js";
 
 const tela = document.querySelector("#tela");
 const ctx = tela.getContext("2d");
@@ -13,21 +10,14 @@ tela.height = window.innerHeight;
 
 const quadrado = 64;
 
-// Cria o personagem
-const jogador = new Personagem(0, 0);
-
-//Cenario 1
+const jogador = new Personagem(Fase1.player.x, Fase1.player.y);
 
 function criarCenario() {
-  fase1.plataforma1.forEach((square) => {
+  Fase3.plataforma1.forEach((square) => {
     const p = new Plataforma(square.x, square.y, square.img);
     p.desenhar(ctx);
   });
 }
-
-// Estado do teclado
-
-// fase1.pedra
 
 const input = {
   direita: false,
@@ -36,7 +26,6 @@ const input = {
   baixo: false,
 };
 
-// Quando aperta a tecla
 document.addEventListener("keydown", (e) => {
   switch (e.key) {
     case "d":
@@ -80,8 +69,8 @@ document.addEventListener("keyup", (e) => {
 
 function desenharGrid() {
   ctx.font = "9px Arial";
-  ctx.fillStyle = "white";
-  ctx.strokeStyle = "white";
+  ctx.fillStyle = "black";
+  ctx.strokeStyle = "black";
 
   for (let y = 0; y <= tela.height; y += quadrado) {
     for (let x = 0; x <= tela.width; x += quadrado) {
@@ -98,14 +87,9 @@ function desenhar() {
   desenharGrid();
   criarCenario();
 
-  // Atualiza o personagem
   jogador.atualizar(input);
 
-  
-
-  // Desenha o personagem
   jogador.desenhar(ctx);
-  
 
   requestAnimationFrame(desenhar);
 }
