@@ -1,7 +1,7 @@
 const carro1 = document.querySelector("#carro")
 const carro2 = document.querySelector("#carro2")
 
-const listaURL = ["../Imagem/carro-vermei.png","../Imagem/carro-rosa.png"]
+const listaURL = ["../Imagem/carro/carro-vermei.png","../Imagem/carro/carro-rosa.png"]
 
 const random = Math.floor(Math.random()* listaURL.length)
 
