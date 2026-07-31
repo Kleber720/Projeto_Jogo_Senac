@@ -61,7 +61,7 @@ img {
   top: 0;
   right: 26.5%;
   /* Caminho para a sua imagem */
-  background-image: url("../Imagem/carro/carro-vermei-invertido.png");
+  background-image: url("../Imagem/cenario/assets/carro/carro-vermei-invertido.png");
   background-repeat: no-repeat;
   background-size: 512px;
 
