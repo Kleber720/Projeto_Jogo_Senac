@@ -38,7 +38,7 @@ const Inicio = {
         y: 576,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -48,7 +48,7 @@ const Inicio = {
         y: 576,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -58,7 +58,7 @@ const Inicio = {
         y: 512,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -68,7 +68,7 @@ const Inicio = {
         y: 512,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -78,7 +78,7 @@ const Inicio = {
         y: 512,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
         efeito: false,
       },
       {
@@ -87,7 +87,7 @@ const Inicio = {
         y: 512,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -97,7 +97,7 @@ const Inicio = {
         y: 576,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -107,7 +107,7 @@ const Inicio = {
         y: 512,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -117,7 +117,7 @@ const Inicio = {
         y: 448,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -127,7 +127,7 @@ const Inicio = {
         y: 448,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
@@ -137,7 +137,7 @@ const Inicio = {
         y: 448,
         width: 64,
         height: 64,
-        img: "assets/piso.png",
+        img: "",
   
         efeito: false,
       },
