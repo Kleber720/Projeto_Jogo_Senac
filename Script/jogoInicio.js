@@ -22,6 +22,31 @@ function criarCenario() {
   });
 }
 
+function colidiu(player, paredes) {
+  return (
+      player.x < paredes.x + paredes.width &&
+      player.x + 63 > paredes.x &&
+      player.y < paredes.y + paredes.height &&
+      player.y + 63 > paredes.y
+  );
+}
+
+function podeMover(novoX, novoY) {
+
+  const futuroPlayer = {
+      x: novoX,
+      y: novoY
+  };
+
+  for (const paredes of Inicio.paredes) {
+      if (colidiu(futuroPlayer, paredes)) {
+          return false;
+      }
+  }
+
+  return true;
+}
+
 const input = {
   direita: false,
   esquerda: false,
@@ -90,7 +115,7 @@ function desenhar() {
   desenharGrid();
   criarCenario();
 
-  jogador.atualizar(input);
+  jogador.atualizar(input, Inicio.paredes);
 
   
 
