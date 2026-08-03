@@ -2,11 +2,11 @@ import Personagem from "../Entitys/personagens.js";
 import Plataforma from "../Entitys/plataforma.js";
 import Fase1 from "../Data/fase1.js";
 
-const tela = document.querySelector("#tela");
-const ctx = tela.getContext("2d");
+const tela1 = document.querySelector("#tela1");
+const ctx = tela1.getContext("2d");
 
-tela.width = window.innerWidth;
-tela.height = window.innerHeight;
+tela1.width = window.innerWidth;
+tela1.height = window.innerHeight;
 
 const quadrado = 64;
 
@@ -72,8 +72,8 @@ function desenharGrid() {
   ctx.fillStyle = "black";
   ctx.strokeStyle = "black";
 
-  for (let y = 0; y <= tela.height; y += quadrado) {
-    for (let x = 0; x <= tela.width; x += quadrado) {
+  for (let y = 0; y <= tela1.height; y += quadrado) {
+    for (let x = 0; x <= tela1.width; x += quadrado) {
       ctx.strokeRect(x + 0.5, y + 0.5, quadrado, quadrado);
 
       ctx.fillText(`x:${x} y:${y}`, x + 2, y + 10);
@@ -82,7 +82,7 @@ function desenharGrid() {
 }
 
 function desenhar() {
-  ctx.clearRect(0, 0, tela.width, tela.height);
+  ctx.clearRect(0, 0, tela1.width, tela1.height);
 
   desenharGrid();
   criarCenario();
