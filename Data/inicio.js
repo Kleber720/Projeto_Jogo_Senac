@@ -1,11 +1,11 @@
 const Inicio = {
   id: "Inicio",
   nome: "Inicio",
-
+ 
   tileSize: 64,
   width: 64,
   height: 64,
-
+ 
   player: {
     velocidade: 4,
     x: 1088,
@@ -29,7 +29,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -39,7 +39,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -49,7 +49,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -59,7 +59,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -69,7 +69,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -88,7 +88,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -98,7 +98,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -108,7 +108,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -118,7 +118,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -128,7 +128,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
     {
@@ -138,7 +138,7 @@ const Inicio = {
       width: 64,
       height: 64,
       img: "",
-
+ 
       efeito: false,
     },
   ],
@@ -147,11 +147,11 @@ const Inicio = {
   // width, height = tamanho da área bloqueada
   paredes: [
     {
-        id: "parede_1",
-        x: 1152,
-        y: 405,
-        width: 64,
-        height: 64,
+      id: "parede_1",
+      x: 1152,
+      y: 405,
+      width: 64,
+      height: 64,
     },
     {
       id: "parede_2",
@@ -280,103 +280,124 @@ const Inicio = {
       height: 64,
     },
     {
-        id: "parede_20",
-        x: 746,
-        y: 690,
-        width: 64,
-        height: 64,
+      id: "parede_20",
+      x: 746,
+      y: 690,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_21",
-        x: 696,
-        y: 768,
-        width: 64,
-        height: 64,
+      id: "parede_21",
+      x: 696,
+      y: 768,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_22",
-        x: 696,
-        y: 832,
-        width: 64,
-        height: 64,
+      id: "parede_22",
+      x: 696,
+      y: 832,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_23",
-        x: 768,
-        y: 930,
-        width: 64,
-        height: 64,
+      id: "parede_23",
+      x: 768,
+      y: 930,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_24",
-        x: 832,
-        y: 930,
-        width: 64,
-        height: 64,
+      id: "parede_24",
+      x: 832,
+      y: 930,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_25",
-        x: 896,
-        y: 930,
-        width: 64,
-        height: 64,
+      id: "parede_25",
+      x: 896,
+      y: 930,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_26",
-        x: 960,
-        y: 930,
-        width: 64,
-        height: 64,
+      id: "parede_26",
+      x: 960,
+      y: 930,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_27",
-        x: 1024,
-        y: 930,
-        width: 64,
-        height: 64,
+      id: "parede_27",
+      x: 1024,
+      y: 930,
+      width: 64,
+      height: 64,
     },
     {
-        id: "parede_28",
-        x: 1088,
-        y: 930,
-        width: 64,
-        height: 64,
+      id: "parede_28",
+      x: 1088,
+      y: 930,
+      width: 64,
+      height: 64,
     },
     // gramado
     {
-        id: "parede_29",
-        x: 832,
-        y: 656,
-        width: 64,
-        height: 12,
+      id: "parede_29",
+      x: 832,
+      y: 656,
+      width: 64,
+      height: 12,
     },
     {
-        id: "parede_30",
-        x: 896,
-        y: 656,
-        width: 64,
-        height: 12,
+      id: "parede_30",
+      x: 896,
+      y: 656,
+      width: 64,
+      height: 12,
     },
     {
-        id: "parede_29",
-        x: 960,
-        y: 656,
-        width: 64,
-        height: 12,
+      id: "parede_29",
+      x: 960,
+      y: 656,
+      width: 64,
+      height: 12,
     },
     {
-        id: "parede_29",
-        x: 1024,
-        y: 656,
-        width: 64,
-        height: 12,
+      id: "parede_29",
+      x: 1024,
+      y: 656,
+      width: 64,
+      height: 12,
     },
     {
-        id: "parede_29",
-        x: 1028,
-        y: 656,
-        width: 64,
-        height: 12,
+      id: "parede_29",
+      x: 1028,
+      y: 656,
+      width: 64,
+      height: 12,
+    },
+  ],
+  // ZONAS DE INTERAÇÃO
+  interacoes: [
+    {
+      id: "porta_casa",
+      x: 768,
+      y: 512,
+      width: 16,
+      height: 64,
+      tipo: "porta",
+      destino: "index.html", // link para a fase dois
+    },
+    {
+      id: "porta_casa2",
+      x: 768,
+      y: 576,
+      width: 24,
+      height: 64,
+      tipo: "porta",
+      destino: "index.html", // link para a fase dois
     },
   ],
   caixa1: {
@@ -401,6 +422,5 @@ const Inicio = {
     texto: "",
   },
 };
-
+ 
 export default Inicio;
-
