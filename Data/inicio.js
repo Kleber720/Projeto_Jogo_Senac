@@ -211,7 +211,7 @@ const Inicio = {
     },
     {
       id: "parede_10",
-      x:960,
+      x: 960,
       y: 405,
       width: 64,
       height: 64,
@@ -332,7 +332,6 @@ const Inicio = {
     efeito: {
       status: true,
     },
-    
   },
   elemento1: {
     id: "e1_1",
