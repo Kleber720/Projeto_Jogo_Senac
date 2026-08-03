@@ -260,7 +260,7 @@ const Inicio = {
     },
     {
       id: "parede_17",
-      x: 704,
+      x: 720,
       y: 576,
       width: 64,
       height: 64,
@@ -275,7 +275,7 @@ const Inicio = {
     {
       id: "parede_19",
       x: 746,
-      y: 652,
+      y: 656,
       width: 64,
       height: 64,
     },
