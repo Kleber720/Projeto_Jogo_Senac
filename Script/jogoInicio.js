@@ -105,17 +105,23 @@ function desenharGrid() {
   }
 }
 
-function desenhar() {
-  ctx.clearRect(0, 0, tela.width, tela.height);
+let ultimoTempo = 0;
 
-  desenharGrid();
-  criarCenario();
+function desenhar(tempoAtual) {
 
-  jogador.atualizar(input, Inicio.paredes);
+    const deltaTime = tempoAtual - ultimoTempo;
+    ultimoTempo = tempoAtual;
 
-  jogador.desenhar(ctx);
+    ctx.clearRect(0, 0, tela.width, tela.height);
 
-  requestAnimationFrame(desenhar);
+    desenharGrid();
+    criarCenario();
+
+    jogador.atualizar(input, deltaTime);
+
+    jogador.desenhar(ctx);
+
+    requestAnimationFrame(desenhar);
 }
 
-desenhar();
+requestAnimationFrame(desenhar);

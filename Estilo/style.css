@@ -13,18 +13,18 @@
   --font-pixel: "Press Start 2P", monospace;
   --font-body: "Pixelify Sans", monospace;
 }
-
+ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   height: 100vh;
   overflow-y: hidden;
 }
-
+ 
 .center {
   height: 100%;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
+ 
 img {
   position: fixed;
   top: 0;
@@ -44,7 +44,7 @@ img {
   z-index: -1;
   opacity: 0.85;
 }
-
+ 
 #carro {
   width: 128px; /* Largura de 1 único frame */
   height: 128px; /* Altura do frame */
@@ -54,13 +54,13 @@ img {
   /* Caminho para a sua imagem */
   background-repeat: no-repeat;
   background-size: 512px;
-
+ 
   /* Nome da animação | Duração total | Tipo de transição | Loop infinito */
   animation: animarSprite 1s steps(4) infinite,
     carroAndar 8s infinite ease-in-out;
   z-index: -1;
 }
-
+ 
 #carro2 {
   width: 128px; /* Largura de 1 único frame */
   height: 128px; /* Altura do frame */
@@ -71,13 +71,13 @@ img {
   background-image: url("../Imagem/cenario/assets/carro/carro-vermei-invertido.png");
   background-repeat: no-repeat;
   background-size: 512px;
-
+ 
   /* Nome da animação | Duração total | Tipo de transição | Loop infinito */
   animation: animarSprite 1s steps(4) infinite, carroAndarDeRe 8s infinite;
   z-index: -1;
   transform: rotate(180deg);
 }
-
+ 
 @keyframes animarSprite {
   from {
     background-position: 0px 0;
@@ -87,7 +87,7 @@ img {
     background-position: -512px 0;
   }
 }
-
+ 
 @keyframes carroAndar {
   from {
     transform: translateY(-100px);
@@ -96,7 +96,7 @@ img {
     transform: translateY(1000px);
   }
 }
-
+ 
 @keyframes carroAndarDeRe {
   from {
     transform: translateY(1000px);
@@ -105,7 +105,7 @@ img {
     transform: translateY(-1200px);
   }
 }
-
+ 
 h1 {
   font-size: 4em;
   margin-block-start: 0.67em;
@@ -117,11 +117,11 @@ h1 {
   color: var(--text);
   text-shadow: 3px 5px 0px black;
 }
-
+ 
 .accent {
   color: var(--senac-orange);
 }
-
+ 
 p {
   text-shadow: 3px 5px 0px black;
   color: var(--text);
@@ -130,71 +130,93 @@ p {
   cursor: pointer;
   transition: color 0.2s linear, text-shadow 0.3s linear;
 }
-
+ 
 p:hover {
   text-shadow: 3px 5px 0px black;
   color: var(--text);
 }
-
+ 
 #titulo {
   position: relative;
   transition: all 0.8s ease;
 }
-
+ 
 #meuTexto {
   transition: opacity 0.5s ease, transform 0.2s ease, color 0.2s ease,
     text-shadow 0.2s ease;
 }
-
+ 
 #meuTexto:hover {
   transform: scale(1.05);
   color: var(--text);
   text-shadow: 0px 0px 0px var(--pixel-shadow);
 }
-
+ 
 #botoes {
   margin-top: 40px;
-
   display: flex;
   flex-direction: column;
   gap: 15px;
-
   opacity: 0;
   transform: translateY(30px);
   pointer-events: none;
-
   transition: 0.8s ease;
 }
-
+ 
 #botoes button {
-  padding: 15px 40px;
+  width: 280px;
+  padding: 16px 24px;
   font-family: var(--font-pixel);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: white;
+  color: var(--senac-blue-deep);
+  border: 3px solid var(--senac-orange);
+  border-radius: 8px;
   cursor: pointer;
+  transition: all .2s ease;
+  box-shadow:
+      0 6px 18px rgba(0,0,0,.25),
+      0 0 0 2px rgba(255,255,255,.25);
 }
-
+ 
+#botoes button:hover {
+  background: var(--senac-orange);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow:
+      0 10px 25px rgba(247,148,29,.45);
+}
+ 
+#botoes button:active {
+  transform: translateY(1px);
+}
+ 
+ 
 /* Estado após pressionar uma tecla */
-
+ 
 #menu {
   position: relative;
 }
-
+ 
 .menu-iniciado #titulo {
   position: absolute;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
 }
-
+ 
 .menu-iniciado #meuTexto {
   opacity: 0;
 }
-
+ 
 .menu-iniciado #botoes {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
-
+ 
 #jogador {
   height: 35px;
   border: none;

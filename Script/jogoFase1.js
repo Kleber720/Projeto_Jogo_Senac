@@ -13,7 +13,7 @@ const quadrado = 64;
 const jogador = new Personagem(Fase1.player.x, Fase1.player.y);
 
 function criarCenario() {
-  Fase3.plataforma1.forEach((square) => {
+  Fase1.plataforma1.forEach((square) => {
     const p = new Plataforma(square.x, square.y, square.img);
     p.desenhar(ctx);
   });
