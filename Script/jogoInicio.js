@@ -103,6 +103,7 @@ function desenharGrid() {
       ctx.fillText(`x:${x} y:${y}`, x + 2, y + 10);
     }
   }
+  // para tirar o grid
 }
 
 let ultimoTempo = 0;
