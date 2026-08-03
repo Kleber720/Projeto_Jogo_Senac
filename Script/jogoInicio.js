@@ -1,6 +1,6 @@
 import Personagem from "../Entitys/personagens.js";
 import Plataforma from "../Entitys/plataforma.js";
-import Inicio from "../Data/inicio.js"
+import Inicio from "../Data/inicio.js";
 
 const tela = document.querySelector("#tela");
 const ctx = tela.getContext("2d");
@@ -10,10 +10,7 @@ tela.height = window.innerHeight;
 
 const quadrado = 64;
 
-const jogador = new Personagem(
-    Inicio.player.x,
-    Inicio.player.y
-);
+const jogador = new Personagem(Inicio.player.x, Inicio.player.y);
 
 function criarCenario() {
   Inicio.plataforma1.forEach((square) => {
@@ -24,24 +21,23 @@ function criarCenario() {
 
 function colidiu(player, paredes) {
   return (
-      player.x < paredes.x + paredes.width &&
-      player.x + 63 > paredes.x &&
-      player.y < paredes.y + paredes.height &&
-      player.y + 63 > paredes.y
+    player.x < paredes.x + paredes.width &&
+    player.x + 63 > paredes.x &&
+    player.y < paredes.y + paredes.height &&
+    player.y + 63 > paredes.y
   );
 }
 
 function podeMover(novoX, novoY) {
-
   const futuroPlayer = {
-      x: novoX,
-      y: novoY
+    x: novoX,
+    y: novoY,
   };
 
   for (const paredes of Inicio.paredes) {
-      if (colidiu(futuroPlayer, paredes)) {
-          return false;
-      }
+    if (colidiu(futuroPlayer, paredes)) {
+      return false;
+    }
   }
 
   return true;
