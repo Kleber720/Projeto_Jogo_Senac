@@ -170,8 +170,8 @@ p:hover {
   font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: white;
-  color: var(--senac-blue-deep);
+  background: rgba(255, 255, 255, 0.192);
+  color: rgb(14, 13, 13);
   border: 3px solid var(--senac-orange);
   border-radius: 8px;
   cursor: pointer;
