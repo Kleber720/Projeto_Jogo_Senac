@@ -39,30 +39,55 @@ class Personagem {
 
     }
 
+    // Verifica se um retângulo (x, y, tamanho, tamanho) colide com alguma parede
+    colideComParede(x, y){
+        const paredes = Inicio.paredes || [];
+
+        for(const parede of paredes){
+            const colide =
+                x < parede.x + parede.width &&
+                x + this.tamanho > parede.x &&
+                y < parede.y + parede.height &&
+                y + this.tamanho > parede.y;
+
+            if(colide) return true;
+        }
+
+        return false;
+    }
+
     mover(input){
 
         let andando = false;
 
+        // Move eixo X e eixo Y separadamente,
+        // testando colisão antes de confirmar cada um.
+        // Isso permite "deslizar" na parede em vez de travar de vez.
+
         if(input.direita){
-            this.x += this.velocidade;
+            const novoX = this.x + this.velocidade;
+            if(!this.colideComParede(novoX, this.y)) this.x = novoX;
             this.direcao = "direita";
             andando = true;
         }
 
         if(input.esquerda){
-            this.x -= this.velocidade;
+            const novoX = this.x - this.velocidade;
+            if(!this.colideComParede(novoX, this.y)) this.x = novoX;
             this.direcao = "esquerda";
             andando = true;
         }
 
         if(input.cima){
-            this.y -= this.velocidade;
+            const novoY = this.y - this.velocidade;
+            if(!this.colideComParede(this.x, novoY)) this.y = novoY;
             this.direcao = "cima";
             andando = true;
         }
 
         if(input.baixo){
-            this.y += this.velocidade;
+            const novoY = this.y + this.velocidade;
+            if(!this.colideComParede(this.x, novoY)) this.y = novoY;
             this.direcao = "baixo";
             andando = true;
         }

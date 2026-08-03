@@ -25,15 +25,78 @@ body {
     overflow-y: hidden;
 }
 
-img {
+#fundo {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     z-index: -1;
     opacity: 0.9;
+}
+
+#carro {
+  width: 128px; /* Largura de 1 único frame */
+  height: 128px; /* Altura do frame */
+  position: absolute;
+  top: 0;
+  right: 33.5%;
+  /* Caminho para a sua imagem */
+  
+  background-repeat: no-repeat;
+  background-size: 512px;
+
+  /* Nome da animação | Duração total | Tipo de transição | Loop infinito */
+  animation: animarSprite 1s steps(4) infinite,
+    carroAndar 8s infinite ease-in-out;
+  z-index: -1;
+  
+}
+
+#carro2 {
+  width: 128px; /* Largura de 1 único frame */
+  height: 128px; /* Altura do frame */
+  position: absolute;
+  top: 0;
+  right: 26.5%;
+  /* Caminho para a sua imagem */
+  background-image: url("../Imagem/cenario/assets/carro/carro-vermei-invertido.png");
+  background-repeat: no-repeat;
+  background-size: 512px;
+
+  /* Nome da animação | Duração total | Tipo de transição | Loop infinito */
+  animation: animarSprite 1s steps(4) infinite, carroAndarDeRe 8s infinite;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+@keyframes animarSprite {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    /* Mova o equivalente à largura total da imagem para a esquerda */
+    background-position: -512px 0;
+  }
+}
+
+@keyframes carroAndar {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(1000px);
+  }
+}
+
+@keyframes carroAndarDeRe {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
 }
 
 h1 {
@@ -58,10 +121,38 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    transition: left 1s ease, opacity 1s ease;
+    transition: left 2s ease, opacity 2s ease;
 }
 
 #titulo.titulo-sai {
     left: -50%;
     opacity: 0;
+}
+
+#seta {
+    position: absolute;
+    left: 41.9%;
+    bottom: 39%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    animation: flutuar 1s ease-in-out infinite;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
 }
