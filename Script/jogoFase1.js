@@ -69,8 +69,8 @@ document.addEventListener("keyup", (e) => {
 
 function desenharGrid() {
   ctx.font = "9px Arial";
-  ctx.fillStyle = "black";
-  ctx.strokeStyle = "black";
+  ctx.fillStyle = "white";
+  ctx.strokeStyle = "white";
 
   for (let y = 0; y <= tela1.height; y += quadrado) {
     for (let x = 0; x <= tela1.width; x += quadrado) {
