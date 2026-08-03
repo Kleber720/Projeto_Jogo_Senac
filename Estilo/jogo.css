@@ -99,6 +99,17 @@ body {
   }
 }
 
+#teto-inicio{
+  background: center/contain no-repeat url("../Imagem/cenario/teto-inicio.png");
+  width: 190px;
+  height: 400px;
+  position: fixed;
+  top: 33%;
+  right: 1078px;
+  opacity: 1;
+  
+}
+
 h1 {
     font-size: 4em;
     margin-block-start: 0.67em;

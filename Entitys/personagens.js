@@ -13,7 +13,7 @@ class Personagem {
         this.img = new Image();
         this.img.src = Inicio.player.img;
 
-        this.tamanho = 63;
+        this.tamanho = 64;
 
         // DIREÇÃO
         this.direcao = "baixo";
