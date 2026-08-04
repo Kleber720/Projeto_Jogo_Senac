@@ -1,6 +1,6 @@
-const Inicio = {
-  id: "Inicio",
-  nome: "Inicio",
+const Fase1 = {
+  id: "Fase1",
+  nome: "Fase1",
 
   tileSize: 64,
   width: 64,
@@ -58,5 +58,5 @@ const Inicio = {
   },
 };
 
-export default Inicio;
+export default Fase1;
 
