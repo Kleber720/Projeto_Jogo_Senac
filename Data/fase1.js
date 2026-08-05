@@ -8,8 +8,8 @@ const Fase1 = {
 
   player: {
     velocidade: 4,
-    x: 128,
-    y: 128,
+    x: 448,
+    y: 256,
     img: "../Imagem/personagens/clara.png",
   },
   plataforma1: [
