@@ -35,6 +35,26 @@ const Fase3 = {
         height: 64,
     },
   ],
+  interacoes: [
+    {
+      id: "porta_casa",
+      x: 768,
+      y: 512,
+      width: 16,
+      height: 64,
+      tipo: "porta",
+      destino: "index.html", // link para a fase dois
+    },
+    {
+      id: "porta_casa2",
+      x: 768,
+      y: 576,
+      width: 24,
+      height: 64,
+      tipo: "porta",
+      destino: "index.html", // link para a fase dois
+    },
+  ],
   caixa1: {
     id: "c1_1",
     x: 64,
